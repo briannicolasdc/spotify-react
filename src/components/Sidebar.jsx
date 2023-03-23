@@ -2,8 +2,10 @@ import styled from 'styled-components'
 
 export default function Sidebar() {
     return(
-        <Container></Container>
-    )
+        <Container>
+            
+        </Container>
+    );
 }
 
 const Container = styled.div`
@@ -11,7 +13,7 @@ const Container = styled.div`
     padding: 12px;
     left: 0;
     bottom: 0;
-    width: 14.5%;
+    width: 17%;
     position: fixed;
     top: 0;
     padding-left: 0px;

@@ -1,5 +1,33 @@
 .App {
   text-align: center;
+  display: flex;
+}
+
+.App .Main{
+      margin: 40px;
+      padding-top: 40px;
+      margin-left: 220px;
+      text-align: left;
+}
+
+.title{
+  padding-top: 20px;
+  color: white;
+  margin-left: 80px;
+}
+
+.title:hover{
+  text-decoration: underline;
+}
+
+section {
+  height: 270px;
+  width: 720px;
+}
+
+p{
+  color: white;
+  padding-left: 10px;
 }
 
 .App-logo {

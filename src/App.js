@@ -10,14 +10,19 @@ function App() {
   return ( 
     <div className = "App" >
       
-      <HeaderStyled > </HeaderStyled> 
+      <HeaderStyled > 
+
+      </HeaderStyled> 
       <div className='Main'>
         <h1 className='title'>Boa Tarde</h1>
+        <div>
         <section>
           <LastListened></LastListened>
         </section>
+        </div>
         <h1 className='title'>As tuas mixes mais ouvidas </h1>
         <section>
+          
           <Mixes></Mixes>
         </section>
         <h1 className='title'>Feito para Brian Nicolas</h1>
@@ -30,7 +35,9 @@ function App() {
         </section>
       </div>
       
-      <Sidebar> </Sidebar> 
+      <Sidebar> 
+      
+        </Sidebar> 
       <FooterStyled > </FooterStyled>
 
     </div>

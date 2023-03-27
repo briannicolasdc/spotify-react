@@ -34,6 +34,19 @@ export default function Sidebar() {
                     </li>
                 </ul>
             </div>
+            <div>
+                    <ul>
+                        <li>
+                            <a href="#">Rap Caviar</a>
+                        </li>
+                        <li>
+                            <a href="#">Brian</a>
+                        </li>
+                        <li>
+                            <a href="#"> Minha playlist</a>
+                        </li>
+                    </ul>
+                </div>
         </Container>
     );
 }
@@ -51,6 +64,10 @@ const Container = styled.div`
 
     a{
         color: #b3b3b3;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
     }
 
 

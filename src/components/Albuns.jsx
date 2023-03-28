@@ -7,16 +7,16 @@ export default function AlbumStyled(){
         <Album>
             <Play></Play>
             <Photo src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" alt=""></Photo>
-            
             <Title>Hail Mary</Title>
+            
         </Album>
     );
     
 }
 
 const Album = styled.div`
-    width: 360px;
-    height: 80px;
+    width: 21.96vw;
+    height: 11vh;
     background-color: #212121;
     margin: 10px;
     font-size: 24px;
@@ -26,11 +26,13 @@ const Album = styled.div`
     &:hover{
         background-color: #535353;
     }
+
+    
 `;
 
 const Photo = styled.img`
-    width: 80px;
-    height: 80px;
+    width: 5.4vw;
+    height: 10.8vh;
     border-radius: 6px;
     float: left;
 `

@@ -44,8 +44,8 @@ const Container = styled.div`
     right: 0;
 
     .prev-next-buttons{
-        padding-left: 40px;
-        padding-right: 320px;
+        padding-left: 2.928vw;
+        padding-right: 20.928vw;
         border: none;
         top: 0; 
         
@@ -53,25 +53,25 @@ const Container = styled.div`
     
     background-color: #101010;
     ul{
-        padding-bottom: 30px;
+        padding-bottom: 1.93vw;
     }
 
     li {
       display: inline-block;
       margin: 0px 8px;
-      width: 70px;
+      width: 4.4vw;
     }
     li a {
       color: #b3b3b3;
       text-decoration: none;
       font-weight: bold;
-      font-size: 14px;
+      font-size: 0.875em;
       letter-spacing: 1px;
     }
     li.divider {
         color: #ffffff;
-        font-size: 26px;
-        margin: 0px 20px;
+        font-size: 1.625em;
+        margin: 0vw 2.60vh;
         width: auto;
     }
 
@@ -82,14 +82,14 @@ const Container = styled.div`
 
 const Button = styled.button`
     color: #7a7a7a;
-    width: 34px;
-    height: 34px;
+    width: 2.5vw;
+    height: 5vh;
     border-radius: 100%;
-    font-size: 18px;
+    font-size: 1.125em;
     border: 0px;
     background-color: #090909;
-    margin-right: 10px;
-    margin-bottom: 30px;
+    margin-right: 0.732vw;
+    margin-bottom: 3.90625vh;
     
     span{
         color: #7a7a7a;

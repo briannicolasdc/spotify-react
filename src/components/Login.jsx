@@ -11,8 +11,8 @@ export default function Login(){
 
 const Container = styled.button`
     background-color: white;
-    height: 60px;
-    width: 200px;
+    height: 7.8vh;
+    width: 13vw;
     margin-bottom: 30px;
     border-radius: 30px;
     border: none;

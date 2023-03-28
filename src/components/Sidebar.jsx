@@ -72,7 +72,7 @@ const Container = styled.div`
 
 
     img{
-        width: 150px;
+        width: 10vw;
         padding-left: 15px;
         padding-top: 20px;
         padding-bottom: 15px;

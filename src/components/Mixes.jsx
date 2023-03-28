@@ -17,7 +17,7 @@ export default function Mixes(){
 const Container = styled.div`
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    margin-left: 80px;
+    margin-left: 5.857vw;
     
 `;
 

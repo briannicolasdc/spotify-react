@@ -38,7 +38,7 @@ export default function FooterStyled() {
                         <GenericIcon className="fa fa-retweet"></GenericIcon>
                     </button>
                     <div>
-                        <Slider width="430px"></Slider>
+                        <Slider width="31.479vw"></Slider>
                     </div>
                 </div>
                 <div id="soundControllers">
@@ -55,7 +55,7 @@ export default function FooterStyled() {
                         <GenericIcon className="fa fa-volume-off"></GenericIcon>
                     </button>
                     <div id="volume">
-                        <Slider width="140px" id="volume-slider"></Slider>
+                        <Slider width="10.249vw" id="volume-slider"></Slider>
                 </div>
             </div>
         </Container>
@@ -77,7 +77,8 @@ const Container = styled.div`
     padding-left: 20px;
 
     img {
-    height: 64px;
+    height: 9vh;
+    width: 4.685vw;
     padding-right: 15px;
     padding-top: 13px;
     padding-bottom: 10px;
@@ -85,10 +86,12 @@ const Container = styled.div`
 
     ul {
         padding: 4px 0px;
+        list-style-type: none;
     }
 
     li {
         padding-bottom: 5px;
+        
     }
 
     a {
@@ -109,7 +112,7 @@ const Container = styled.div`
         background-color: #1a1a1a;
         margin-left: 10px;
         margin-top: 30px;
-        height: 30px;
+        height: 3.90625vh;
         border: none;
         color: #b3b3b3;
     }
@@ -123,8 +126,8 @@ const Container = styled.div`
     #play{
         border-radius: 50%; 
         background-color: #b3b3b3;
-        width: 32px;
-        height: 32px;
+        width: 2.343vw;
+        height: 4.166vh;
         margin-bottom: px;
     }
 

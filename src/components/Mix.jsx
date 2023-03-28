@@ -13,22 +13,24 @@ export default function Mix(){
 }
 
 const Container = styled.div`
-    width: 150px;
+    width: 10vw;
+    height: 35vh;
     padding: 20px 27.5px;
     background-color: #212121;
     margin: 10px;
-    font-size: 18px;
+    font-size: 1.125em;
     color: white;
     text-align: bottom;
     border-radius: 6px;
-    margin-right: 15px;
+    margin-right: 1.098vw;
     &:hover{
         background-color: #535353;
     }
 `;
 
 const Photo = styled.img`
-    height: 150px;
+    width: 9.75vw;
+    height: 19.53vh;
     border-radius: 6px;
 `;
 
@@ -36,6 +38,6 @@ const Title = styled.h4`
     color: white;
     padding-top: 0;
     float: left;
-    padding-left: 10px;
+    padding-left: 0.732vw;
 `;
 

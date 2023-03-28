@@ -17,7 +17,7 @@ export default function LastListened(){
 }
 
 const DivStyled = styled.div`
-    margin-left: 80px;
+    margin-left: 5.857vw;
     
 `;
 

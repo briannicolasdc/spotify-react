@@ -22,7 +22,6 @@ function App() {
         </div>
         <h1 className='title'>As tuas mixes mais ouvidas </h1>
         <section>
-          
           <Mixes></Mixes>
         </section>
         <h1 className='title'>Feito para Brian Nicolas</h1>

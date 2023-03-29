@@ -1,13 +1,16 @@
 import styled from "styled-components";
 import Play from "./Play";
 
-export default function Mix(){
+export default function Mix(props){
+
+    const {imageUrl, title, description} = props;
     return (
         <Container>
-            <Photo src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" alt=""></Photo>
+            <Photo src={imageUrl} alt=""></Photo>
             <Play className="above"></Play>
-            <Title>Mix de Tupac</Title>
-            <p>Best of tupac</p>
+            <Title>{title} </Title>
+            <br />
+            <p>{description}</p>
         </Container>
     );
 }
@@ -18,13 +21,16 @@ const Container = styled.div`
     padding: 20px 27.5px;
     background-color: #212121;
     margin: 10px;
-    font-size: 1.125em;
+    font-size: 0.925em;
     color: white;
-    text-align: bottom;
     border-radius: 6px;
     margin-right: 1.098vw;
     &:hover{
         background-color: #535353;
+    }
+
+    p{
+        padding-top: 40px;
     }
 `;
 
@@ -39,5 +45,6 @@ const Title = styled.h4`
     padding-top: 0;
     float: left;
     padding-left: 0.732vw;
+    font-size: 1.125em;
 `;
 

@@ -1,13 +1,15 @@
 import styled from "styled-components";
 import Play from "./Play";
 
-export default function AlbumStyled(){
+export default function AlbumStyled(props){
+
+    const { imageUrl, title } = props
 
     return (
         <Album>
             <Play></Play>
-            <Photo src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" alt=""></Photo>
-            <Title>Hail Mary</Title>
+            <Photo src={imageUrl} alt=""></Photo>
+            <Title>{title} </Title>
             
         </Album>
     );
@@ -15,11 +17,10 @@ export default function AlbumStyled(){
 }
 
 const Album = styled.div`
-    width: 21.96vw;
-    height: 11vh;
+    width: 100%;
+    height: 80px;
     background-color: #212121;
-    margin: 10px;
-    font-size: 24px;
+    font-size: 1.125em;
     color: white;
     text-align: center;
     border-radius: 6px;
@@ -39,7 +40,7 @@ const Photo = styled.img`
 
 const Title = styled.h4`
     color: white;
-    padding-top: 0;
+    padding-top: 10px;
     float: left;
     padding-left: 10px;
 `;

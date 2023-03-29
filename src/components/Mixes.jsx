@@ -1,14 +1,17 @@
 import styled from "styled-components";
+import getMixes from "../api/mixes";
 import Mix from "./Mix";
 
+
+
 export default function Mixes(){
+
+    const mixes = getMixes();
     return (
         <Container>
-            <Mix></Mix>
-            <Mix></Mix>
-            <Mix></Mix>
-            <Mix></Mix>
-            <Mix></Mix>
+            {mixes.map((mix, index) => {
+                return <Mix imageUrl={mix.imageUrl} title={mix.title} description={mix.description} />
+            })}
         </Container>
 
     );

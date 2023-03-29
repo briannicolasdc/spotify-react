@@ -65,6 +65,7 @@ const Container = styled.div`
     a{
         color: #b3b3b3;
         text-decoration: none;
+        font-size: 1.125em;
         &:hover{
             text-decoration: underline;
         }

@@ -4,7 +4,7 @@ import { GenericIcon } from './GenericIcon';
 
 export default function Sidebar() {
 
-    const playlist = getPlaylist();
+    const playlists = getPlaylists();
     return(
         <Container>
             <div>

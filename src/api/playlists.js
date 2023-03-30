@@ -1,4 +1,4 @@
-export default function getPlaylist(){
+export default function getPlaylists(){
     return [
         {
            title: 'Minha playlist n° 3',

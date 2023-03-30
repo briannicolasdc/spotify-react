@@ -1,7 +1,10 @@
 import styled from 'styled-components'
+import getPlaylist from '../api/playlists';
 import { GenericIcon } from './GenericIcon';
 
 export default function Sidebar() {
+
+    const playlists = getPlaylists();
     return(
         <Container>
             <div>
@@ -34,17 +37,15 @@ export default function Sidebar() {
                     </li>
                 </ul>
             </div>
-            <div>
+            <div className='playlists'>
                     <ul>
-                        <li>
-                            <a href="#">Rap Caviar</a>
-                        </li>
-                        <li>
-                            <a href="#">Brian</a>
-                        </li>
-                        <li>
-                            <a href="#"> Minha playlist</a>
-                        </li>
+                        {playlist.map((list, index) => {
+                            return (
+                                <li>
+                                    <a href="#">{list.title}</a>
+                                </li>                                
+                            );
+                        })}
                     </ul>
                 </div>
         </Container>
@@ -65,7 +66,7 @@ const Container = styled.div`
     a{
         color: #b3b3b3;
         text-decoration: none;
-        font-size: 1.125em;
+        font-size: 1.225em;
         &:hover{
             text-decoration: underline;
         }
@@ -89,5 +90,12 @@ const Container = styled.div`
         margin: 20px 0px 0px;
         border-color: #636363;
     }
+
+    .playlists a{
+        font-size: 0.925em;
+        padding-bottom: 10px;
+    }
 `;
+
+
 

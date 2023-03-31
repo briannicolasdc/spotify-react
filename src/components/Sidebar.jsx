@@ -5,59 +5,51 @@ import getPlaylist from '../api/playlists'
 import { GenericIcon } from './GenericIcon'
 
 export default function Sidebar () {
-  const playlist = getPlaylist()
+  const playlists = getPlaylist()
   return (
-    <Container>
-      <div>
-        <a href="#">
-          <img
-            src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png"
-            alt="Logo"
-          ></img>
-        </a>
-      </div>
-      <div>
-        <ul>
-          <li>
-            <GenericIcon className="fa fa-home" text="Home"></GenericIcon>
-          </li>
-          <li>
-            <GenericIcon className="fa fa-search" text="Search"></GenericIcon>
-          </li>
-          <li>
-            <GenericIcon className="fa fa-book" text="Library"></GenericIcon>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li>
-            <GenericIcon
-              className="fa fa-plus-square"
-              text="Create Playlist"
-            ></GenericIcon>
-          </li>
-          <li>
-            <GenericIcon
-              className="fa fa-heart"
-              text="Liked Songs"
-            ></GenericIcon>
-          </li>
-        </ul>
-      </div>
-      <hr />
-      <div className="playlists">
-        <ul>
-          {playlist.map((list, index) => {
-            return (
-              <li>
-                <a href="#">{list.title}</a>
-              </li>
-            )
-          })}
-        </ul>
-      </div>
-    </Container>
+        <Container>
+            <div>
+                <a href="#" >
+                    <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png"
+                        alt="Logo"></img>
+                </a>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <GenericIcon className="fa fa-home" text="Home"></GenericIcon>
+                    </li>
+                    <li>
+                        <GenericIcon className="fa fa-search" text="Search"></GenericIcon>
+                    </li>
+                    <li>
+                        <GenericIcon className="fa fa-book" text="Library"></GenericIcon>
+                    </li>
+                </ul>
+            </div>
+            <hr />
+            <div>
+                <ul>
+                    <li>
+                        <GenericIcon className="fa fa-plus-square" text="Create Playlist"></GenericIcon>
+                    </li>
+                    <li>
+                        <GenericIcon className="fa fa-heart" text="Liked Songs"></GenericIcon>
+                    </li>
+                </ul>
+            </div>
+            <div className='playlists'>
+                    <ul>
+                        {playlists.map((list, index) => {
+                          return (
+                                <li>
+                                    <a href="#">{list.title}</a>
+                                </li>
+                          )
+                        })}
+                    </ul>
+                </div>
+        </Container>
   )
 }
 

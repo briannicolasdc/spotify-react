@@ -3,27 +3,24 @@
   display: flex;
 }
 
-.App .Main{
-      margin: 40px;
-      padding-top: 40px;
-      margin-left: 220px;
-      text-align: left;
+.App .Main {
+  margin: 40px;
+  padding-top: 40px;
+  margin-left: 200px;
+  text-align: left;
 }
 
-.title{
+.title {
   padding-top: 40px;
   color: white;
   margin-left: 80px;
-  
 }
 
-.title:hover{
+.title:hover {
   text-decoration: underline;
 }
 
-
-
-p{
+p {
   color: white;
   padding-left: 10px;
 }

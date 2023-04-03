@@ -2,6 +2,7 @@
 import styled from 'styled-components'
 import { GenericIcon } from './GenericIcon'
 import { Slider } from './Slider'
+import { VolumeSlider } from './VolumeSlider'
 
 export default function FooterStyled () {
   return (
@@ -19,7 +20,7 @@ export default function FooterStyled () {
               <a href="#">Ambition az a ridah</a>
             </li>
             <li>
-              <a href="#">Tupac</a>
+              <a href="#" id='artist'>Tupac</a>
             </li>
           </ul>
         </div>
@@ -53,7 +54,7 @@ export default function FooterStyled () {
           <GenericIcon className="fa fa-retweet"/>
         </button>
         <div>
-          <Slider width="300px"></Slider>
+          <Slider ></Slider>
         </div>
       </div>
       <div id="soundControllers">
@@ -70,7 +71,7 @@ export default function FooterStyled () {
           <GenericIcon className="fa fa-volume-off"/>
         </button>
         <div id="volume">
-          <Slider width="120px" id="volume-slider"></Slider>
+          <VolumeSlider />
         </div>
       </div>
     </Container>
@@ -91,6 +92,11 @@ const Container = styled.div`
   align-items: center;
   padding-left: 20px;
 
+  #artist {
+    font-size: 0.775em;
+    color: #b3b3b3;
+    &:hover { color: white; }
+  }
   img {
     height: 9vh;
     width: 4.685vw;
@@ -155,4 +161,6 @@ const Container = styled.div`
     margin-bottom: 5px;
     margin-right: 50px;
   }
+
+  
 `

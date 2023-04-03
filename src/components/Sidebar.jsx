@@ -27,7 +27,6 @@ export default function Sidebar () {
                     </li>
                 </ul>
             </div>
-            <hr />
             <div>
                 <ul>
                     <li>
@@ -38,6 +37,7 @@ export default function Sidebar () {
                     </li>
                 </ul>
             </div>
+            <hr />
             <div className='playlists'>
                     <ul>
                         {playlists.map((list, index) => {
@@ -63,11 +63,12 @@ const Container = styled.div`
   top: 0;
   padding-left: 0px;
   height: 100%;
+  font-family: 'Helvetica', 'Arial', sans-serif;
 
   a {
     color: #b3b3b3;
     text-decoration: none;
-    font-size: 1.225em;
+    font-size: 1.125em;
     padding-top: 10px;
     &:hover {
       text-decoration: underline;

@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 import styled from 'styled-components'
 
-export const Slider = () => {
+export const VolumeSlider = () => {
   return (
     <Container>
       <SliderBar />
@@ -12,7 +12,7 @@ export const Slider = () => {
 
 const Container = styled.div`
   // eslint-disable-next-line no-constant-condition, quotes
-  width: 400px;
+  width: 120px;
   padding-bottom: 10px;
 `
 

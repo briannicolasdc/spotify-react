@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 import styled from 'styled-components'
 
-export const Slider = () => {
+export const VolumeSlider = () => {
   return (
     <Container>
       <SliderBar />
@@ -12,8 +12,7 @@ export const Slider = () => {
 
 const Container = styled.div`
   // eslint-disable-next-line no-constant-condition, quotes
-  width: 500px;
-  
+  width: 120px;
   padding-bottom: 10px;
 `
 
@@ -21,5 +20,4 @@ const SliderBar = styled.input.attrs({
   type: 'range'
 })`
   width: 100%;
-  
 `

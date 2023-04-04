@@ -1,7 +1,9 @@
+@import url('https://fonts.cdnfonts.com/css/gotham');
+
 .App {
   text-align: center;
   display: flex;
-  
+  font-family: 'Gotham', sans-serif;
 }
 
 .App .Main {

@@ -68,7 +68,7 @@ const Container = styled.div`
   a {
     color: #b3b3b3;
     text-decoration: none;
-    font-size: 1.125em;
+    font-size: 0.925em;
     padding-top: 10px;
     &:hover {
       text-decoration: underline;
@@ -101,8 +101,9 @@ const Container = styled.div`
     padding-bottom: 10px;
   }
   .playlists a {
-    font-size: 1.025em;
+    font-size: 0.925em;
     padding-bottom: 10px;
     padding-top: 10px;
+    text-align: left;
   }
 `

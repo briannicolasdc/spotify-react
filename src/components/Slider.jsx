@@ -12,7 +12,8 @@ export const Slider = () => {
 
 const Container = styled.div`
   // eslint-disable-next-line no-constant-condition, quotes
-  width: 400px;
+  width: 500px;
+  
   padding-bottom: 10px;
 `
 
@@ -20,4 +21,5 @@ const SliderBar = styled.input.attrs({
   type: 'range'
 })`
   width: 100%;
+  
 `

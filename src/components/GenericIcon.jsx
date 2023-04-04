@@ -16,6 +16,7 @@ const Container = styled.div`
 
   a {
     text-decoration: none;
-    font-size: 1.225em;
+    font-size: 0.925em;
+    font-family: 'Gotham', sans-serif;
   }
 `

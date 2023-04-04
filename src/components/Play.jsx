@@ -14,7 +14,7 @@ const PlayComponent = styled.div`
   span {
     position: absolute;
     right: 10px;
-    top: -60px;
+    top: 32px;
     padding: 18px;
     background-color: #1db954;
     color: black;

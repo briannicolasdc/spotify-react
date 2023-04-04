@@ -22,6 +22,9 @@ export default function LastListened () {
 
 const DivStyled = styled.div`
   margin-left: 5.857vw;
+  img {
+    height: 100%;
+  }
 `
 
 const GridDiv = styled.div`
